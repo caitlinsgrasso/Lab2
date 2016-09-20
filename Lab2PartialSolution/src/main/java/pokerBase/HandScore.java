@@ -2,31 +2,28 @@ package pokerBase;
 
 import java.util.ArrayList;
 
-public class HandScore {
+import javax.xml.bind.annotation.XmlElement;
 
+import pokerEnums.eHandStrength;
+
+public class HandScore {
 
 	private int HandStrength;
 	private int HiHand;
-	private int LoHand = 0;
+	private int LoHand=0;
 	private ArrayList<Card> Kickers = new ArrayList<Card>();
-	private boolean Natural = true;
-	
-	public HandScore() {}
-	
-	public HandScore(int handStrength, int hiHand, int loHand, ArrayList<Card> kickers) {
+
+	public HandScore(int handStrength, int hiHand, int loHand, ArrayList<Card> Kickers) {
 		super();
+
 		HandStrength = handStrength;
 		HiHand = hiHand;
 		LoHand = loHand;
-		Kickers = kickers;
+		Kickers = Kickers;
 	}
 
 	public int getHandStrength() {
 		return HandStrength;
-	}
-
-	public void setHandStrength(int handStrength) {
-		HandStrength = handStrength;
 	}
 
 	public int getHiHand() {
@@ -49,17 +46,13 @@ public class HandScore {
 		return Kickers;
 	}
 
+	public void setHandStrength(int handStrength2) {
+		HandStrength = handStrength2;
+		
+	}
+
 	public void setKickers(ArrayList<Card> kickers) {
 		Kickers = kickers;
 	}
 
-	boolean isNatural() {
-		return Natural;
-	}
-
-	void setNatural(boolean natural) {
-		Natural = natural;
-	}
-	
-	
 }

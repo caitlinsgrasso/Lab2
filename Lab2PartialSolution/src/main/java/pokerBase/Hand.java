@@ -6,7 +6,7 @@ import pokerEnums.eCardNo;
 import pokerEnums.eHandStrength;
 import pokerEnums.eRank;
 import pokerEnums.eSuit;
-
+//lab2
 public class Hand {
 
 	private ArrayList<Card> CardsInHand;
