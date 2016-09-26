@@ -19,7 +19,6 @@ public class HandScore {
 		HandStrength = handStrength;
 		HiHand = hiHand;
 		LoHand = loHand;
-		Kickers = Kickers;
 	}
 
 	public int getHandStrength() {
@@ -46,8 +45,8 @@ public class HandScore {
 		return Kickers;
 	}
 
-	public void setHandStrength(int handStrength2) {
-		HandStrength = handStrength2;
+	public void setHandStrength(int ThreeOfAKind) {
+		HandStrength = ThreeOfAKind;
 		
 	}
 
