@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import javax.xml.bind.annotation.XmlElement;
 
 import pokerEnums.eHandStrength;
-
+//lab2
 public class HandScore {
 
 	private int HandStrength;
